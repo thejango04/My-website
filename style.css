@@ -37,10 +37,9 @@ img {
 croppedimg {
     width: 100vw; /*Makes image span full width of viewport*/
     max-width: 100%; /* Make it responsive */
-    height: 300px; /* Set a fixed height to crop */
+    height: 200px; /* Set a fixed height to crop */
     object-fit: cover; /* Ensures the image fills while cropping excess */
     object-position: center top; /* Adjust cropping (centered, can shift up/down) */
     display: block;
     margin: 20px auto; /* Center it */
-    border-radius: 10px; /* Optional: Adds smooth edges */
 }
