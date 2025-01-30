@@ -16,12 +16,22 @@ h1 {
     margin-top: 20px;
 }
 
+/* Centered */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #222; /* Slightly darker grey for contrast */
+    font-size: 2rem; /* Adjust size for emphasis */
+    margin-top: 20px;
+    text-align: center; /* Ensures proper alignment */
+}
+
 /* Style for paragraph text */
 p {
     font-size: 1rem;
     color: #555; /* Slightly lighter grey for body text */
     text-align: center; /* Center-align paragraph */
     margin-top: 10px;
+    text-align: center; /* Ensures proper alignment */
 }
 
 /* Style for Images */
@@ -124,4 +134,11 @@ img {
     align-self: center; /* Centers the header within the right-text block */
     border-bottom: 3px solid black; /* Adjust thickness and color */
     padding-bottom: 5px; /* Space between text and underline */
+}
+
+.divider {
+    width: calc(95% - 40px); /* Makes the line shorter than full width */
+    height: 3px;
+    background-color: black;
+    margin: 10px auto; /* Centers the line and adds space */
 }
