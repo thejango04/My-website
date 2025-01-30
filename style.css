@@ -12,7 +12,6 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #222; /* Slightly darker grey for contrast */
-    text-align: center; /* Center-align the heading */
     font-size: 2rem; /* Adjust size for emphasis */
     margin-top: 20px;
 }
@@ -43,15 +42,18 @@ img {
     margin: 0 auto; /* Center it */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("KasaStaff-38.jpg");
     background-size: cover;
+    background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgb(249, 249, 249) 100%), 
+    url('KasaStaff-38.jpg') no-repeat center center/cover;
 }
 
 .overlaytexttop {
     position: absolute; /* Puts the text on top of the image */
-    top: 5%; /* Moves it to the vertical center */
-    left: 50%; /* Moves it to the horizontal center */
+    top: 7%; /* Moves it to the vertical center */
+    left: 15%; /* Moves it to the horizontal center */
     transform: translate(-50%, -50%); /* Centers the text */
     color: white; /* Makes the text stand out */
-    font-size: 2rem; /* Adjust text size */
+    font-size: 4rem; /* Adjust text size */
     font-weight: bold; /* Makes the text bolder */
     text-align: center; /* Ensures proper alignment */
     padding: 10px 20px; /* Adds spacing around the text */
@@ -60,13 +62,66 @@ img {
 
 .overlaytextmid {
     position: absolute; /* Puts the text on top of the image */
-    top: 45%; /* Moves it to the vertical center */
+    top: 50%; /* Moves it to the vertical center */
     left: 50%; /* Moves it to the horizontal center */
     transform: translate(-50%, -50%); /* Centers the text */
     color: white; /* Makes the text stand out */
-    font-size: 4rem; /* Adjust text size */
+    font-size: 3.2rem; /* Adjust text size */
     font-weight: bold; /* Makes the text bolder */
     text-align: center; /* Ensures proper alignment */
     padding: 10px 20px; /* Adds spacing around the text */
-    border-radius: 5px; /* Adds rounded edges to the background */
+}
+
+/* Style for the header below the image */
+.header-container {
+    max-width: 1200px;
+    margin: 20px auto; /* Centers it horizontally */
+    padding: 10px;
+}
+
+/* Align header to the left */
+.header-left {
+    text-align: left; /* Moves text to the left */
+    margin-left: 10%; /* Moves it slightly to the right */
+}
+
+/* Align header to the right */
+.header-right {
+    text-align: right; /* Moves text to the right */
+    margin-left: 10%; /* Moves the container halfway to the right */
+    transform: translateX(-20%); /* Fine-tune positioning */
+}
+
+.image-text-container {
+    display: flex;
+    align-items: flex-start; /* Align text with the image */
+    gap: 20px; /* Space between image and text */
+    max-width: 1800px; /* Adjust width as needed */
+    margin: 40px auto; /* Center the block with spacing */
+    padding-left: 30px; /* Adds gap from the left side */
+}
+
+/* Image Styling */
+.left-image {
+    width: 650px; /* Adjust size */
+    height: auto;
+    border-radius: 15px; /* Optional rounded corners */
+}
+
+/* Text Styling */
+.right-text {
+    font-size: 18px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-right: 30px; /* Adds gap from the left side */
+}
+
+/* Header Styling */
+.right-text h1 {
+    margin-bottom: 10px; /* Adjusts spacing between the header and body text */
+    align-self: center; /* Centers the header within the right-text block */
+    border-bottom: 3px solid black; /* Adjust thickness and color */
+    padding-bottom: 5px; /* Space between text and underline */
 }
