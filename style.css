@@ -42,4 +42,6 @@ croppedimg {
     object-position: center top; /* Adjust cropping (centered, can shift up/down) */
     display: block;
     margin: 0 auto; /* Center it */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/myimage.jpg");
+    background-size: cover;
 }
