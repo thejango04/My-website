@@ -1,6 +1,26 @@
+/* Apply Roboto for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Dark grey for text */
+    background-color: #f9f9f9; /* Light grey background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improve readability */
 }
+
+/* Use Montserrat for the main heading */
 h1 {
-    font-family: 'Courier New', monospace;
+    font-family: 'Montserrat', sans-serif;
+    color: #222; /* Slightly darker grey for contrast */
+    text-align: center; /* Center-align the heading */
+    font-size: 2rem; /* Adjust size for emphasis */
+    margin-top: 20px;
+}
+
+/* Style for paragraph text */
+p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter grey for body text */
+    text-align: center; /* Center-align paragraph */
+    margin-top: 10px;
 }
