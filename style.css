@@ -191,3 +191,36 @@ img {
 .grid-item:hover .overlay {
     opacity: 1; /* Show text */
 }
+
+.footer {
+    background-color: black; /* Solid black background */
+    color: white; /* White text */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add space above/below */
+    position: relative; /* Keeps footer at the bottom */
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Style the content inside the footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Spacing between text and links */
+}
+
+/* Style the social links */
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for links */
+.social-links a:hover {
+    color: gray; /* Changes color when hovered */
+}
