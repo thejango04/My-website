@@ -24,3 +24,12 @@ p {
     text-align: center; /* Center-align paragraph */
     margin-top: 10px;
 }
+
+/* Style for Images */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners */
+}
