@@ -36,12 +36,37 @@ img {
 
 .croppedimg {
     width: 100vw; /*Makes image span full width of viewport*/
-    max-width: 100%; /* Make it responsive */
-    height: 450px; /* Set a fixed height to crop */
+    height: 800px; /* Set a fixed height to crop */
     object-fit: cover; /* Ensures the image fills while cropping excess */
     object-position: center top; /* Adjust cropping (centered, can shift up/down) */
     display: block;
     margin: 0 auto; /* Center it */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("KasaStaff-38.jpg");
     background-size: cover;
+}
+
+.overlaytexttop {
+    position: absolute; /* Puts the text on top of the image */
+    top: 5%; /* Moves it to the vertical center */
+    left: 50%; /* Moves it to the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Makes the text stand out */
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold; /* Makes the text bolder */
+    text-align: center; /* Ensures proper alignment */
+    padding: 10px 20px; /* Adds spacing around the text */
+    border-radius: 5px; /* Adds rounded edges to the background */
+}
+
+.overlaytextmid {
+    position: absolute; /* Puts the text on top of the image */
+    top: 45%; /* Moves it to the vertical center */
+    left: 50%; /* Moves it to the horizontal center */
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white; /* Makes the text stand out */
+    font-size: 4rem; /* Adjust text size */
+    font-weight: bold; /* Makes the text bolder */
+    text-align: center; /* Ensures proper alignment */
+    padding: 10px 20px; /* Adds spacing around the text */
+    border-radius: 5px; /* Adds rounded edges to the background */
 }
