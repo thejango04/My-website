@@ -142,3 +142,52 @@ img {
     background-color: black;
     margin: 10px auto; /* Centers the line and adds space */
 }
+
+/* Image Grid - 2x2 Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 10px; /* Space between images */
+    width: 600px; /* Adjust as needed */
+    margin: 20px auto; /* Center the grid */
+}
+
+/* Style each grid item */
+.grid-item {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+}
+
+/* Ensure images fit properly */
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Overlay text (hidden initially) */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hover effect: Darken image and show text */
+.grid-item:hover img {
+    filter: brightness(40%); /* Darken the image */
+}
+
+.grid-item:hover .overlay {
+    opacity: 1; /* Show text */
+}
